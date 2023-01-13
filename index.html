@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winston Chu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1790d4093f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <!-- <li><a href="">Home</a></li> -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <!-- <li><a href="#">Contact</a></li> -->
+                    <i class="fa-solid fa-xmark fa-lg" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fa-lg" onclick="openmenu()"></i>
+                <div id="sidemenu">
+                    <a href="mailto: winofaston@gmail.com" target="_blank" class="contacts"><i
+                            class="fa-solid fa-envelope fa-xl"></i></a>
+                    <a href="https://github.com/winston-chu" target="_blank" class="contacts"><i
+                            class="fa-brands fa-github fa-xl"></i></a>
+                    <a href="https://www.linkedin.com/in/winston-chu-15310723b/" target="_blank" class="contacts"><i
+                            class="fa-brands fa-linkedin fa-xl"></i></a>
+                </div>
+            </nav>
+            <div class="header-text">
+                <p>Computer Science @ <span>Queen's</span></p>
+                <h1><span>Winston</span> Chu</h1>
+                <a href="#about">
+                    <img src="images/arrowdown.png" class="center">
+                </a>
+                <div class="scroll-page" id="page-1"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Winston! I am a first year computer science student at Queen's University.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="skill-list">
+                            <div class="skill">
+                                <img src="images/python.png">
+                                <div class="skillName">
+                                    <h3>Python</h3>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <img src="images/java.png">
+                                <div class="skillName">
+                                    <h3>Java</h3>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <img src="images/html.png">
+                                <div class="skillName">
+                                    <h3>HTML</h3>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <img src="images/css.png">
+                                <div class="skillName">
+                                    <h3>CSS</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Queen's Space Engineering Team</span><br>Satellite Comms division</li>
+                            <li><span>QHacks 2023</span><br>Participant</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Queen's Computing '26</span><br>GPA: 4.10/4.30</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/1.png">
+                    <div class="layer">
+                        <h3>Discord Bot</h3>
+                        <p>User-interactive discord bot with dozens of features and commands</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/2.png">
+                    <div class="layer">
+                        <h3>QHacks</h3>
+                        <p>Hackathon hosted by Queen's University</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/3.png">
+                    <div class="layer">
+                        <h3>The Detonator</h3>
+                        <p>Game created using the Pygame libraries and modules</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/4.png">
+                    <div class="layer">
+                        <h3>QSET</h3>
+                        <p>Designing a space satellite capable of receiving data and performing actions</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <button class="btn">Still interested?</button> -->
+            <a href="#open-modal" class="btn">Still Interested?</a>
+            <div id="open-modal" class="modal-window">
+                <div>
+                    <a href="#modal-close" title="Close" class="modal-close"><i class="fa-solid fa-xmark fa-xl"></i></a>
+                    <h1>Find out more!</h1>
+                    <div>
+
+                        <a href="mailto: winofaston@gmail.com" target="_blank" class="findMore"><i
+                                class="fa-solid fa-envelope fa-xl"></i></a>
+                        <a href="https://drive.google.com/file/d/1OKaqEAI7x9JWSiRqJnhUHVezWwmXeASg/view?usp=sharing"
+                            target="_blank" class="findMore"><i class="fa-solid fa-folder fa-xl"></i></a>
+                        <a href="https://github.com/winston-chu" target="_blank" class="findMore"><i
+                                class="fa-brands fa-github fa-xl"></i></a>
+                        <a href="https://www.linkedin.com/in/winston-chu-15310723b/" target="_blank" class="findMore"><i
+                                class="fa-brands fa-linkedin fa-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu() {
+            sidemenu.style.left = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.left = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>

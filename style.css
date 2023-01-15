@@ -224,6 +224,11 @@ nav ul li a:hover::after {
     margin: 10px 0;
 }
 
+.tab-contents ul li {
+    font-size: 14px;
+    margin: 15px 0;
+}
+
 .tab-contents ul li span {
     color: rgb(188, 83, 23);
     font-size: 20px;

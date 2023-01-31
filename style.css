@@ -287,9 +287,10 @@ nav ul li a:hover::after {
 }
 
 .work img {
+    height: 100%;
     width: 100%;
+    object-fit: cover;
     /* border-radius: 10px; */
-
     display: block;
     transition: transform 0.5s;
     background: rgb(56, 55, 55);
@@ -318,6 +319,8 @@ nav ul li a:hover::after {
     padding: 0 40px;
     font-size: 14px;
     transition: height 0.5s;
+    pointer-events: none;
+    background: url(background);
 }
 
 .work:hover .layer {
